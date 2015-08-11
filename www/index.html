@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="components/loader.js"></script>
+    
+    <script type="text/javascript" src="./ncmb-latest.min.js" charset="utf-8"></script>
+    
+    <!-- omikuji logic -->
+    <script type="text/javascript" src="./omikuji.js" charset="utf-8"></script>
+    
+    <link rel="stylesheet" href="components/loader.css">
+    <style>
+        body {
+            background-image: url("./images/omikuji-bg.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        #hako {
+            margin-top: 15%;
+            margin-left : 0;
+            margin-right : 0;
+        }
+        
+        img {
+           width: 70%; 
+        }
+
+        #bottombar {
+            position: absolute;
+            bottom: 30px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="hako">
+        <img id="saisyo" src="./images/omikuji-box.png" />
+        <img id="kekka" style="display : none;"/>
+    </div>
+    <div id="bottombar">
+    <!-- call the omiukji() method -->
+        <img id="button" src="./images/omikuji-btn-hajimeru.png" onclick="omikuji()">
+    </div>
+</body>
+</html>
